@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Student</string>
+    <string-array name="Branch">
+        <item>BCA</item>
+        <item>MCA</item>
+        <item>MSCIT </item>
+        <item>BSCIT</item>
+    </string-array>
+</resources>

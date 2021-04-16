@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20dp"
+            android:hint="Test Title"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/suject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Test Subject"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Test Date"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/starttme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginRight="20dp"
+            android:hint="Test Start time"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Subject"
+            android:text="submit"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:backgroundTint="#FB0707" />
+
+        <TextView
+            android:id="@+id/reslut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180sp"
+            android:layout_marginRight="20dp"
+            android:hint="Test"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reslut1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20dp"
+            android:hint="Test"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
