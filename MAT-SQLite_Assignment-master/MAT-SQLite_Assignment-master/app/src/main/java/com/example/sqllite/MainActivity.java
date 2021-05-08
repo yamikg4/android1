@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     DbHelper dh;
     Button btnLogin, btnRegisterHere;
-    EditText sno, sname, sage;
+    EditText sno, sname, sage,scourse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         sno = findViewById(R.id.sno);
         sname = findViewById(R.id.sname);
         sage = findViewById(R.id.sage);
+        scourse=findViewById(R.id.scourse);
 
         btnLogin = findViewById(R.id.btnLogin);
         btnRegisterHere = findViewById(R.id.btnRegisterHere);
@@ -35,8 +36,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int stdno = Integer.parseInt(sno.getText().toString());
                 String stdname = sname.getText().toString();
+                String course=scourse.getText().toString();
                 int stdage = Integer.parseInt(sage.getText().toString());
-                if (sno.getText().toString() == "" || stdname == "" || sage.getText().toString() == "") {
+                if (sno.getText().toString() == "" || stdname == "" || sage.getText().toString() == ""||scourse) {
                     Toast.makeText(getApplicationContext(), "All fields are required.", Toast.LENGTH_SHORT).show();
                 } else {
                     dh = new DbHelper(getApplicationContext());
